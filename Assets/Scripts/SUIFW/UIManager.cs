@@ -8,6 +8,7 @@ using UnityEngine;
 /// </summary>
 public class UIManager : MonoBehaviour
 {
+    #region 字段
     /*字段*/
     private static UIManager _Instance = null;
     // UI 窗体预设路径（参数1，窗体预设的名称， 2，表示窗体预设的路径）
@@ -32,6 +33,7 @@ public class UIManager : MonoBehaviour
     // UI管理脚本的节点
     private Transform _TraUIScripts = null;
 
+    #endregion 字段
 
     /// <summary>
     /// 得到实例
@@ -82,15 +84,16 @@ public class UIManager : MonoBehaviour
         DontDestroyOnLoad(_TraCanvasTransform);
 
         // 初始化 UI 窗体预设 的路径数据
-        if (_DicFormsPaths != null)
-        {
-            _DicFormsPaths.Add("LoginUIForm", @"UIPrefabs/LoginUIForm");
-            _DicFormsPaths.Add("SelectHeroUIForm", @"UIPrefabs/SelectHeroUIForm");
-            _DicFormsPaths.Add("MainCityUIForm", @"UIPrefabs/MainCityUIForm");
-            _DicFormsPaths.Add("HeroInfoUIForm", @"UIPrefabs/HeroInfoUIForm");
-            _DicFormsPaths.Add("MallUIForm", @"UIPrefabs/MallUIForm");
+        //if (_DicFormsPaths != null)
+        //{
+        //    _DicFormsPaths.Add("LoginUIForm", @"UIPrefabs/LoginUIForm");
+        //    _DicFormsPaths.Add("SelectHeroUIForm", @"UIPrefabs/SelectHeroUIForm");
+        //    _DicFormsPaths.Add("MainCityUIForm", @"UIPrefabs/MainCityUIForm");
+        //    _DicFormsPaths.Add("HeroInfoUIForm", @"UIPrefabs/HeroInfoUIForm");
+        //    _DicFormsPaths.Add("MallUIForm", @"UIPrefabs/MallUIForm");
 
-        }
+        //}
+        InitUIFormPathData();
     }
 
 
@@ -549,6 +552,17 @@ public class UIManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    /// <summary>
+    /// 初始化各个窗体数据
+    /// </summary>
+    private void InitUIFormPathData() {
+        IConfigManager configManager = new ConfigManagerByJson(SysDefine.SYS_PATH_UIFORMS_CONFIG_INFO);
+        if (configManager != null)
+        {
+            _DicFormsPaths = configManager.AppSetting;
+        }
     }
 
     #endregion

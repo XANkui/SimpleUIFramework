@@ -84,29 +84,35 @@ public class UIFormMaskMgr : MonoBehaviour
         {
                 // 完全透明，不能穿透
             case UIFormLucenyType.Lucency:
-                Debug.Log("完全透明");
+                //Debug.Log("完全透明");
                 _GoMaskPanel.SetActive(true);
-                Color newColor1 = new Color(255/255f,255/255f,255/255f,0/255f);
+                Color newColor1 = new Color(SysDefine.SYS_UIMASK_LUCENCY_COLOR_REB,
+                    SysDefine.SYS_UIMASK_LUCENCY_COLOR_REB, SysDefine.SYS_UIMASK_LUCENCY_COLOR_REB,
+                    SysDefine.SYS_UIMASK_LUCENCY_COLOR_REB_A);
                 _GoMaskPanel.GetComponent<Image>().color = newColor1;
 
                 break;
                 //半透明，不能穿透
             case UIFormLucenyType.Translucence:
-                Debug.Log("半透明");
+                //Debug.Log("半透明");
                 _GoMaskPanel.SetActive(true);
-                Color newColor2 = new Color(200 / 255F, 200 / 255F, 200 / 255F, 50 / 255F);
+                Color newColor2 = new Color(SysDefine.SYS_UIMASK_TRANSLUCENCE_COLOR_REB,
+                    SysDefine.SYS_UIMASK_TRANSLUCENCE_COLOR_REB, SysDefine.SYS_UIMASK_TRANSLUCENCE_COLOR_REB, 
+                    SysDefine.SYS_UIMASK_LUCENCY_COLOR_REB_A);
                 _GoMaskPanel.GetComponent<Image>().color = newColor2;
                 break;
                 // 低透明，不能穿透
             case UIFormLucenyType.ImPenetrable:
-                Debug.Log("低透明");
+                //Debug.Log("低透明");
                 _GoMaskPanel.SetActive(true);
-                Color newColor3 = new Color(50 / 255F, 50 / 255F, 50 / 255F, 200 / 255F);
+                Color newColor3 = new Color(SysDefine.SYS_UIMASK_IMPENETRABLE_COLOR_REB,
+                    SysDefine.SYS_UIMASK_IMPENETRABLE_COLOR_REB, SysDefine.SYS_UIMASK_IMPENETRABLE_COLOR_REB, 
+                    SysDefine.SYS_UIMASK_IMPENETRABLE_COLOR_REB_A);
                 _GoMaskPanel.GetComponent<Image>().color = newColor3;
                 break;
                 // 可以穿透
             case UIFormLucenyType.Pentrate:
-                Debug.Log("可以穿透");
+                //Debug.Log("可以穿透");
                 if (_GoMaskPanel.activeInHierarchy)
                 {
                     _GoMaskPanel.SetActive(false);

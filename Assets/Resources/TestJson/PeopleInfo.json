@@ -1,0 +1,11 @@
+﻿{
+	"People":[
+
+		{"Name":"Appple","Age":12},
+		{"Name":"Bob","Age":13},
+		{"Name":"Candy","Age":14},
+		{"Name":"Double","Age":11}
+	
+	]
+
+}

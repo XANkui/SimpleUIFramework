@@ -14,6 +14,7 @@ public class SysDefine
 
     /*路径常量*/
     public const string SYS_PATH_CANVAS = "Canvas";
+    public const string SYS_PATH_UIFORMS_CONFIG_INFO = "Config/UIFormsConfigInfo";
 
     /*标签常量*/
     public const string SYS_TAG_CANVAS = "_TagCanvas";
@@ -24,7 +25,16 @@ public class SysDefine
     public const string SYS_NODE_POPUP = "PopUp";
     public const string SYS_NODE_SCRIPTSMANAGER = "_ScriptsMgr";
 
-    /**/
+    /*遮罩管理器中，透明度常量*/
+    // Lucency 全透明
+    public const float SYS_UIMASK_LUCENCY_COLOR_REB = 255 / 255F;
+    public const float SYS_UIMASK_LUCENCY_COLOR_REB_A = 0 / 255F;
+    // Translucence 半透明
+    public const float SYS_UIMASK_TRANSLUCENCE_COLOR_REB = 220 / 255F;
+    public const float SYS_UIMASK_TRANSLUCENCE_COLOR_REB_A = 50 / 255F;
+    // ImPenetrable 低透明
+    public const float SYS_UIMASK_IMPENETRABLE_COLOR_REB = 50 / 255F;
+    public const float SYS_UIMASK_IMPENETRABLE_COLOR_REB_A = 200 / 255F;
 
     /*全局性的方法*/
 
