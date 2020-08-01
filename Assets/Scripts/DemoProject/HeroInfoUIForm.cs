@@ -2,17 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeroInfoUIForm : MonoBehaviour
+public class HeroInfoUIForm : BaseUIForm
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // 窗体性质
+        CurrentUIType.UIForms_TYpe = UIFormType.Fixed;
     }
 }

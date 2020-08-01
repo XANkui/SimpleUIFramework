@@ -27,6 +27,12 @@ public class BaseUIForm : MonoBehaviour
     /// </summary>
     public virtual void Display() {
         this.gameObject.SetActive(true);
+
+        // 必须是弹出窗口，才设置透明度
+        if (_CurrentUIType.UIForms_TYpe == UIFormType.PopUp)
+        {
+            UIFormMaskMgr.GetInstance().SetMaskWindow(this.gameObject,_CurrentUIType.UIForm_LucenyTYpe);
+        }
     }
 
     /// <summary>
@@ -34,6 +40,12 @@ public class BaseUIForm : MonoBehaviour
     /// </summary>
     public virtual void Hiding() {
         this.gameObject.SetActive(false);
+
+        // 必须是弹出窗口，才设置透明度
+        if (_CurrentUIType.UIForms_TYpe == UIFormType.PopUp)
+        {
+            UIFormMaskMgr.GetInstance().CancelMaskWIndow();
+        }
     }
 
     /// <summary>
@@ -41,6 +53,12 @@ public class BaseUIForm : MonoBehaviour
     /// </summary>
     public virtual void Redisplay() {
         this.gameObject.SetActive(true);
+
+        // 必须是弹出窗口，才设置透明度
+        if (_CurrentUIType.UIForms_TYpe == UIFormType.PopUp)
+        {
+            UIFormMaskMgr.GetInstance().SetMaskWindow(this.gameObject, _CurrentUIType.UIForm_LucenyTYpe);
+        }
     }
 
     /// <summary>

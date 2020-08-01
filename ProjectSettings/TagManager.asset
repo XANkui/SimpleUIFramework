@@ -5,7 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - _TagCanvas
-  - _TestTagLoginUIForm
+  - _TagUICamera
   layers:
   - Default
   - TransparentFX

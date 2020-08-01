@@ -718,6 +718,7 @@ GameObject:
   - component: {fileID: 4816178507822384150}
   - component: {fileID: 4816178507822384148}
   - component: {fileID: 4816178507822384151}
+  - component: {fileID: 114581334815438152}
   m_Layer: 5
   m_Name: HeroInfoUIForm
   m_TagString: Untagged
@@ -781,6 +782,18 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &114581334815438152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4816178507822384145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e622eddd00f7542a4c71fdc7d94531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4816178507930465173
 GameObject:
   m_ObjectHideFlags: 0

@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 399888850932606175}
   - component: {fileID: 399888850932606169}
   - component: {fileID: 399888850932606168}
+  - component: {fileID: 114069279975370734}
   m_Layer: 5
   m_Name: MainCityUIForm
   m_TagString: Untagged
@@ -150,6 +151,18 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &114069279975370734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399888850932606174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e25b93486d8247f48af3ce0386d7e2f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &399888851132684586
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +696,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -265.6, y: 136.9}
+  m_AnchoredPosition: {x: -233, y: 64}
   m_SizeDelta: {x: 400, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &399888852383926500

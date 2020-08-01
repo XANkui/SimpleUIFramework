@@ -86,6 +86,9 @@ public class UIManager : MonoBehaviour
         {
             _DicFormsPaths.Add("LoginUIForm", @"UIPrefabs/LoginUIForm");
             _DicFormsPaths.Add("SelectHeroUIForm", @"UIPrefabs/SelectHeroUIForm");
+            _DicFormsPaths.Add("MainCityUIForm", @"UIPrefabs/MainCityUIForm");
+            _DicFormsPaths.Add("HeroInfoUIForm", @"UIPrefabs/HeroInfoUIForm");
+            _DicFormsPaths.Add("MallUIForm", @"UIPrefabs/MallUIForm");
 
         }
     }

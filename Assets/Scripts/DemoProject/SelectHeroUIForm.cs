@@ -26,6 +26,8 @@ public class SelectHeroUIForm : BaseUIForm
 
     public void EnterMainCityUIFrom(GameObject go) {
         Debug.Log("进入主城UI");
+        OpenUIForm("MainCityUIForm");
+        OpenUIForm("HeroInfoUIForm");
     }
 
     public void BackLoginUIForm(GameObject go) {
