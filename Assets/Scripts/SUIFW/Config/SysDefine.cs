@@ -15,6 +15,7 @@ public class SysDefine
     /*路径常量*/
     public const string SYS_PATH_CANVAS = "Canvas";
     public const string SYS_PATH_UIFORMS_CONFIG_INFO = "Config/UIFormsConfigInfo";
+    public const string SYS_PATH_LOG_SYS_CONFIG_INFO = "Config/SysConfigInfo";
 
     /*标签常量*/
     public const string SYS_TAG_CANVAS = "_TagCanvas";

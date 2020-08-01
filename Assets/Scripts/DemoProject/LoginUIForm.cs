@@ -7,6 +7,9 @@ public class LoginUIForm : BaseUIForm
 {
     private void Awake()
     {
+        Log.Write(GetType() + " Awake()/");
+        Log.SyncLogCatchToFile();
+
         // 定义本窗体的性质
         base.CurrentUIType.UIForms_TYpe = UIFormType.Normal;
         base.CurrentUIType.UIForm_ShowType = UIFormSHowType.Normal;
