@@ -15,6 +15,9 @@
 {"Key":"HeroInfoUIForm",
 "Value":"UIPrefabs/HeroInfoUIForm"},
 
+{"Key":"PropDetailUIForm",
+"Value":"UIPrefabs/PropDetailUIForm"},
+
 {"Key":"MallUIForm",
 "Value":"UIPrefabs/MallUIForm"}
 

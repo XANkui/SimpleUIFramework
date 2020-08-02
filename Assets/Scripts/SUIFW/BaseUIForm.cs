@@ -113,5 +113,25 @@ public class BaseUIForm : MonoBehaviour
         UIManager.GetInstance().CloseUIForm(strCurrentUIFormName);
     }
 
+    /// <summary>
+    /// 消息发送方法
+    /// </summary>
+    /// <param name="msgType">消息类型</param>
+    /// <param name="msgName">消息名称</param>
+    /// <param name="msgContent">消息内容</param>
+    protected void SendMessage(string msgType, string msgName, object  msgContent) {
+        KeyValuesUpdate kvs = new KeyValuesUpdate(msgName, msgContent);
+        MessageCenter.SendMessage(msgType, kvs);
+    }
+
+    /// <summary>
+    /// 接收消息
+    /// </summary>
+    /// <param name="msgType">消息类型</param>
+    /// <param name="handler">消息委托</param>
+    protected void ReceiveMessage(string msgType, MessageCenter.DelMessageDelivery handler) {
+        MessageCenter.AddMsgListener(msgType, handler);
+    }
+
     #endregion
 }
