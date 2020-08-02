@@ -288,7 +288,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u767B\u5F55\u7CFB\u7EDF"
+  m_Text: "[\u767B\u5F55\u7CFB\u7EDF]"
 --- !u!1 &2947585642245112293
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 334e4573a6a1c6e46922a692015226ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Title_Text: {fileID: 2947585641941270869}
+  Login_Button_Text: {fileID: 2947585642434015699}
 --- !u!1 &2947585642431907963
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,7 +742,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u767B\u5F55"
+  m_Text: "[\u767B\u5F55]"
 --- !u!1 &2947585642599670150
 GameObject:
   m_ObjectHideFlags: 0

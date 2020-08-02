@@ -133,5 +133,18 @@ public class BaseUIForm : MonoBehaviour
         MessageCenter.AddMsgListener(msgType, handler);
     }
 
+    /// <summary>
+    /// 显示对应的界面语言文字
+    /// </summary>
+    /// <param name="languageID"></param>
+    /// <returns></returns>
+    protected string ShowText(string languageID) {
+        string strQueryReslut = string.Empty;
+
+        strQueryReslut = LanguageMgr.GetInstance().ShowText(languageID);
+
+        return strQueryReslut;
+    }
+
     #endregion
 }

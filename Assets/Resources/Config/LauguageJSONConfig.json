@@ -1,37 +1,40 @@
 ﻿{
 "ConfigInfo":
 [
+{"Key":"Global_1",
+"Value":"我是页面"},
+
 {"Key":"LogonSystem",
-"Value":"LogonSystem"},
+"Value":"登陆系统"},
 
 {"Key":"Logon",
-"Value":"Logon"},
+"Value":"登陆"},
 
 {"Key":"EnterGame",
-"Value":"EnterGame"},
+"Value":"进入游戏"},
 
 {"Key":"MarketSys",
-"Value":"MarketSys"},
+"Value":"商城系统"},
 
 {"Key":"Return",
-"Value":"Return"},
+"Value":"返回"},
 
 {"Key":"Purchase",
-"Value":"Purchase"},
+"Value":"购买"},
 
 {"Key":"Confirm",
-"Value":"OK"},
+"Value":"确认"},
 
 {"Key":"ConfirmWindow",
-"Value":"ConfirmWindow"},
+"Value":"确认窗口"},
 
 {"Key":"ClozeDetailInfo",
-"Value":"ClothDetailInfo："},
+"Value":"盔甲详细信息："},
 
 {"Key":"shoeDetailInfo",
-"Value":"shoeDetailInfo:"},
+"Value":"战靴详细信息:"},
 
 {"Key":"Cancle",
-"Value":"Cancle"}
+"Value":"取消"}
 ]
 }
